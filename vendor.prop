@@ -80,6 +80,9 @@ ro.debug_level=0x494d
 ## Media
 media.settings.xml=/vendor/etc/media_profiles_vendor_V1.xml
 
+# Memory optimizations
+ro.config.avoid_gfx_accel=true
+
 ## Navigation Bar
 qemu.hw.mainkeys=0
 
