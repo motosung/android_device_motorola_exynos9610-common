@@ -1,6 +1,3 @@
-## Adoptable Storage
-ro.crypto.volume.options=aes-256-xts
-
 ## Audio
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=1
@@ -36,7 +33,9 @@ drm.service.enabled=true
 
 # Encryption
 ro.crypto.allow_encrypt_override=false
+ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.volume.metadata.method=dm-default-key
 
 ## FRP
 ro.frp.pst=/dev/block/platform/13520000.ufs/by-name/frp
