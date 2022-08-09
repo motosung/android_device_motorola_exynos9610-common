@@ -1,0 +1,8 @@
+# Access to wakeup, suspend stats, and wakeup reasons
+r_dir_file(system_suspend, sysfs_suspend_stats)
+r_dir_file(system_suspend, sysfs_wakeup)
+r_dir_file(system_suspend, sysfs_wakeup_reasons)
+# To resolve arbitrary sysfs paths from /sys/class/wakeup/* symlinks
+allow system_suspend sysfs_type:dir search;
+allow system_suspend sysfs_battery:dir r_dir_perms;
+allow system_suspend sysfs_battery:file r_file_perms;

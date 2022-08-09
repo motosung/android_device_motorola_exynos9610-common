@@ -70,3 +70,26 @@ genfscon sysfs /devices/virtual/backlight/hbm                                   
 genfscon sysfs /devices/virtual/nanohub/nanohub/sensortype                                                              u:object_r:sysfs_nanohub:s0
 genfscon sysfs /module/scsc_bt/parameters/bluetooth_address                                                             u:object_r:sysfs_bt_writable:s0
 genfscon sysfs /power/cpuhp/set_online_cpu                                                                              u:object_r:sysfs_cpuhotplug_writable:s0
+
+# BACKPORT: PM / wakeup: Show wakeup sources stats in sysfs (4.14.149)
+genfscon sysfs /devices/platform/11a10000.speedy/i2c-6/6-0000/s2mpu09-rtc/rtc/rtc0/wakeup5                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11a10000.speedy/i2c-6/6-0000/s2mpu09-rtc/wakeup/wakeup3                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11a10000.speedy/i2c-6/6-0000/wakeup/wakeup1                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/13830000.i2c/i2c-7/7-003b/power_supply/s2mu106-fuelgauge/wakeup7                       u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/13830000.i2c/i2c-7/7-003c/power_supply/s2mu106-usbpd/wakeup22                          u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/13840000.i2c/i2c-8/8-003d/s2mu00x-battery/power_supply/ac/wakeup21                     u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/13840000.i2c/i2c-8/8-003d/s2mu00x-battery/power_supply/battery/wakeup19                u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/13840000.i2c/i2c-8/8-003d/s2mu00x-battery/power_supply/usb/wakeup20                    u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/13840000.i2c/i2c-8/8-003d/s2mu106-charger/power_supply/otg/wakeup9                     u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/13840000.i2c/i2c-8/8-003d/s2mu106-charger/power_supply/s2mu106-charger/wakeup8         u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/13840000.i2c/i2c-8/8-003d/s2mu106-powermeter/power_supply/s2mu106_pmeter/wakeup11      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/13840000.i2c/i2c-8/8-003d/wakeup/wakeup2                                               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/13840000.i2c/i2c-8/8-0041/power_supply/s2mcs02-charger/wakeup10                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/14400000.fimc_is_sensor/wakeup/wakeup13                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/14410000.fimc_is_sensor/wakeup/wakeup14                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/14420000.fimc_is_sensor/wakeup/wakeup15                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/14430000.fimc_is_sensor/wakeup/wakeup16                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/14490000.fimc_is/wakeup/wakeup6                                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/148b0000.decon_f/wakeup/wakeup17                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/14a50000.abox/wakeup/wakeup12                                                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/gpio_keys/wakeup/wakeup18                                                              u:object_r:sysfs_wakeup:s0

@@ -21,6 +21,8 @@ allow vendor_init fingerprint_vendor_data_file:dir r_dir_perms;
 
 allow vendor_init unlabeled:{ dir file } { read getattr relabelfrom };
 
+get_prop(vendor_init, system_prop)
+
 set_prop(vendor_init, moto_boot_prop)
 set_prop(vendor_init, rmnet_mux_prop)
 set_prop(vendor_init, vendor_radio_prop)

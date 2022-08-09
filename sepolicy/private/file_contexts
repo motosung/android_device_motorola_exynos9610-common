@@ -2,10 +2,14 @@
 # Daemons
 #
 
-/system/bin/clean_scratch_files     u:object_r:clean_scratch_files_exec:s0
+/system/bin/clean_scratch_files                                                          u:object_r:clean_scratch_files_exec:s0
 
 ##########################
 # Devices
 #
 
-/dev/radio0                         u:object_r:fm_device:s0
+/dev/radio0                                                                              u:object_r:fm_device:s0
+
+# Power Supply
+/sys/devices/platform/13830000.i2c/i2c-7/7-003b/power_supply/s2mu106-(/.*)?              u:object_r:sysfs_battery:s0
+/sys/devices/platform/13840000.i2c/i2c-8/8-003d/s2mu106-charger/power_supply(/.*)?       u:object_r:sysfs_battery:s0

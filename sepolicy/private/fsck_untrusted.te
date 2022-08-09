@@ -1,0 +1,4 @@
+allowxperm fsck_untrusted vold_device:blk_file ioctl 0x127c;
+allowxperm fsck_untrusted vold_device:blk_file ioctl BLKROGET;
+
+allow fsck_untrusted sysfs_battery:dir search;
