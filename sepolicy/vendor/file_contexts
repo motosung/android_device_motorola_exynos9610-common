@@ -92,6 +92,11 @@
 /sys/devices/platform/(.*)/extcon/extcon0/cable.[0-9]/name                              u:object_r:sysfs_extcon:s0
 
 ####################################
+# Wakeup
+
+/sys/devices/platform/(.*)/wakeup[0-9]*(/.*)?                                           u:object_r:sysfs_wakeup:s0
+
+####################################
 # HIDL
 #
 

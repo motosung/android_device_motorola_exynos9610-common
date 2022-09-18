@@ -11,6 +11,7 @@ allow gpsd self:capability net_raw;
 allow gpsd sysfs_socinfo:file r_file_perms;
 
 allow gpsd hal_exynos_rild_hwservice:hwservice_manager find;
+allow gpsd hal_system_suspend_service:service_manager find;
 
 binder_call(gpsd, rild)
 binder_call(gpsd, servicemanager)
