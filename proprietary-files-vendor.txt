@@ -123,7 +123,7 @@ vendor/lib64/hw/android.hardware.gnss@1.1-impl.so:vendor/lib64/hw/android.hardwa
 vendor/lib64/hw/android.hardware.gnss@2.0-impl.so:vendor/lib64/hw/android.hardware.gnss@2.0-impl.samsung.so
 
 ## Graphics
-vendor/lib/egl/libGLES_mali.so
+vendor/lib/egl/libGLES_mali.so|8699013cdfa4c1c84009ee2c5e726220bb7799c6
 vendor/lib/hw/gralloc.exynos9610.so
 vendor/lib/hw/hwcomposer.exynos9610.so
 vendor/lib/libExynosHWCService.so
@@ -138,7 +138,7 @@ vendor/lib/libexynosscaler.so
 vendor/lib/libexynosutils.so
 vendor/lib/libexynosv4l2.so
 vendor/lib/libion_exynos.so
-vendor/lib64/egl/libGLES_mali.so
+vendor/lib64/egl/libGLES_mali.so|6d08f1aeb73ac1982bec2ddbadf696031e199631
 vendor/lib64/hw/gralloc.exynos9610.so
 vendor/lib64/hw/hwcomposer.exynos9610.so
 vendor/lib64/libExynosHWCService.so
