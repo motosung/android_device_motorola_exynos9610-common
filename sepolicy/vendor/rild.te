@@ -8,5 +8,8 @@ binder_call(rild, hal_audio_default)
 binder_call(rild, hal_secure_element_default)
 binder_call(rild, vendor_ims_app)
 
+dontaudit rild system_prop:file read;
+dontaudit rild default_prop:file read;
+
 get_prop(rild, system_boot_reason_prop)
 set_prop(rild, vendor_radio_prop)

@@ -13,6 +13,7 @@ allow gpsd sysfs_socinfo:file r_file_perms;
 allow gpsd hal_exynos_rild_hwservice:hwservice_manager find;
 
 binder_call(gpsd, rild)
+binder_call(gpsd, servicemanager)
 
 get_prop(gpsd, bootanim_system_prop)
 get_prop(gpsd, radio_control_prop)

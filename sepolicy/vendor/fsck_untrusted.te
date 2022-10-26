@@ -1,3 +1,4 @@
 allow fsck_untrusted fuse_device:chr_file getattr;
 allow fsck_untrusted media_rw_data_file:dir getattr;
 allow fsck_untrusted proc_swaps:file { getattr open read };
+allow fsck_untrusted sysfs_block:file r_file_perms;

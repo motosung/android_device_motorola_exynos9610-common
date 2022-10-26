@@ -1,4 +1,9 @@
 ####################################
+# Block
+
+/sys/devices/platform/(.*)/block/sda/queue/discard_max_bytes                            u:object_r:sysfs_block_writable:s0
+
+####################################
 # Daemons
 #
 
@@ -80,6 +85,11 @@
 
 /dev/umts_wfc0                                                                          u:object_r:pktrouter_device:s0
 /dev/umts_wfc1                                                                          u:object_r:pktrouter_device:s0
+
+####################################
+# Extcon
+
+/sys/devices/platform/(.*)/extcon/extcon0/cable.[0-9]/name                              u:object_r:sysfs_extcon:s0
 
 ####################################
 # HIDL
