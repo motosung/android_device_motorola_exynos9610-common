@@ -354,6 +354,10 @@ PRODUCT_PACKAGES += \
 # Shipping API
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Sysconfig
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
