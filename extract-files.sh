@@ -65,6 +65,7 @@ BLOB_ROOT="${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary
 "${PATCHELF}" --replace-needed "libmedia.so" "libmedia_ims.so" "${BLOB_ROOT}"/lib64/libmediaadaptor.so
 "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${BLOB_ROOT}"/vendor/lib*/libexynosdisplay.so
 "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${BLOB_ROOT}"/vendor/lib*/hw/hwcomposer.exynos9610.so
+"${PATCHELF}" --replace-needed "libnetutils.so" "libip_checksum_shim.so" "${BLOB_ROOT}"/vendor/bin/wfc-pkt-router
 
 for LIBAUDIOPROXY_SHIM in $(grep -L "libaudioproxy_shim.so" "${BLOB_ROOT}"/vendor/lib/libaudioproxy.so); do
     "${PATCHELF}" --add-needed libaudioproxy_shim.so "${LIBAUDIOPROXY_SHIM}"
