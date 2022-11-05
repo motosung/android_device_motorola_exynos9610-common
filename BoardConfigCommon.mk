@@ -94,6 +94,7 @@ BOARD_HAVE_SLSI_FM := true
 
 ## Kernel
 BOARD_KERNEL_IMAGE_NAME := Image
+KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/motorola/exynos9610
 
