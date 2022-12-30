@@ -109,6 +109,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.mapper@2.0-impl-2.1
 
+PRODUCT_PACKAGES += \
+    libdrm.vendor:64
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
@@ -161,7 +164,11 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
-    android.hidl.memory@1.0.vendor
+    android.hidl.memory@1.0.vendor \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
 
 # HotwordEnrollement
 PRODUCT_COPY_FILES += \
