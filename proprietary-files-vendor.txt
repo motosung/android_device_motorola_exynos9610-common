@@ -168,10 +168,6 @@ vendor/lib64/libstrongswan.so
 vendor/bin/hw/samsung.hardware.media.c2@1.1-default-service
 vendor/etc/init/samsung.hardware.media.c2@1.1-default-service.rc
 
-## Memtrack
-vendor/lib/hw/memtrack.exynos9610.so
-vendor/lib64/hw/memtrack.exynos9610.so
-
 ## Mobicore
 vendor/app/mcRegistry/00060308060501020000000000000000.tlbin
 vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
